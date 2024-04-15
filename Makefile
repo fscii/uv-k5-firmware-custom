@@ -3,11 +3,11 @@
 # 0 = disable
 # 1 = enable
 
-# ---- STOCK QUANSHENG FERATURES ----
+# ---- STOCK QUANSHENG FEATURES ----
 ENABLE_UART                   ?= 1
 ENABLE_AIRCOPY                ?= 0
 ENABLE_FMRADIO                ?= 1
-ENABLE_NOAA                   ?= 0
+ENABLE_NOAA                   ?= 1  // was 0
 ENABLE_VOICE                  ?= 0
 ENABLE_VOX                    ?= 1
 ENABLE_ALARM                  ?= 0
@@ -35,7 +35,7 @@ ENABLE_FASTER_CHANNEL_SCAN    ?= 1
 ENABLE_RSSI_BAR               ?= 1
 ENABLE_AUDIO_BAR              ?= 1
 ENABLE_COPY_CHAN_TO_VFO       ?= 1
-ENABLE_SPECTRUM               ?= 1
+ENABLE_SPECTRUM               ?= 0  // was 1 - see NOAA in Quansheng defaults above
 ENABLE_REDUCE_LOW_MID_TX_POWER?= 0
 ENABLE_BYP_RAW_DEMODULATORS   ?= 0
 ENABLE_BLMIN_TMP_OFF          ?= 0
